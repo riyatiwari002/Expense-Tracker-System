@@ -1,0 +1,231 @@
+.transactions-page {
+  background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+  padding: 50px 20px;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  padding: 0 12%;
+}
+
+.head h1 {
+  font-size: 32px;
+  color: #0990ab;
+}
+
+.toggle-btn {
+  background: linear-gradient(135deg, #007bff, #00b4d8);
+  color: white;
+  border: none;
+  width: 16%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  min-width: 150px;
+}
+
+.toggle-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #0096c7);
+}
+
+/* Form Container */
+.transaction-container {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 35px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  animation: slideDown 0.5s ease;
+  max-width: 1200px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.transaction-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form Row */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form-row div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 14%;
+  min-width: 120px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn {
+  display: block;
+  margin: 25px auto 0;
+  background: linear-gradient(135deg, #28a745, #00c853);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 200px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1e7e34, #00a152);
+}
+
+/* Transactions Table */
+.transactions-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.transactions-table th {
+  background: #2980b9;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.transactions-table td {
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+}
+
+.transactions-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.transactions-table tr:hover {
+  background: #eef5ff;
+}
+
+/* Buttons in Table */
+.transactions-table td button {
+  margin: 0 5px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.transactions-table td button:first-child {
+  background: #27ae60;
+}
+
+.transactions-table td button:first-child:hover {
+  background: #1f8c4c;
+}
+
+.transactions-table td .delete {
+  background: #e74c3c;
+}
+
+.transactions-table td .delete:hover {
+  background: #c0392b;
+}
+
+/* Income & Expense Colors */
+.income {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.expense {
+  color: #e74c3c;
+  font-weight: 600;
+}
+.fil-con{
+  width: 800px;
+  margin: 20px auto;
+}
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination button.active-page {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}

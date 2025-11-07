@@ -1,0 +1,28 @@
+# Expense Tracker System
+
+## 📖 Description
+This is a simple Expense Tracker System built using JavaScript, Node.js, and MongoDB.  
+It helps users record and manage their daily expenses easily.
+
+## ⚙️ Features
+- Add, edit, and delete expenses  
+- Track total and category-wise spending  
+- Login/Signup functionality  
+- Responsive design  
+
+## 🧩 Technologies Used
+- HTML, CSS, JavaScript (Frontend)
+- Node.js, Express.js (Backend)
+- MongoDB (Database)
+
+## 🚀 How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/Expense-Tracker-System.git
+
+2. Install dependencies:
+npm install
+
+
+3.  Run the server:
+  nodemon app.js

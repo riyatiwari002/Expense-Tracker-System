@@ -1,0 +1,84 @@
+.reports-page {
+  background-color: #f8f9fb;
+  padding: 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.reports-title {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.reports-subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* Report Type */
+.report-type {
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.report-type label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.report-type select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Chart Section */
+.chart-container {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.report-table th,
+.report-table td {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.report-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Buttons */
+.download-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.download-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.download-buttons button:hover {
+  background-color: #0056b3;
+}

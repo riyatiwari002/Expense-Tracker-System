@@ -1,0 +1,100 @@
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+ background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+ height: 90vh;
+}
+
+/* Card Container */
+.register-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+.register-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border: 2px solid #1c92d2;
+  box-shadow: 0 0 5px rgba(28,146,210,0.3);
+}
+
+/* Button Styling */
+.register {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #1c92d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register:hover {
+  background: #0d6efd;
+}
+
+/* Login Text */
+.login-text {
+  margin-top: 15px;
+  color: #555;
+}
+
+.login-link a{
+  color: #1c92d2;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-link:hover a{
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+
